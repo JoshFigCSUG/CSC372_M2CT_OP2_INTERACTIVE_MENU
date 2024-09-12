@@ -15,7 +15,13 @@ public class InteractiveMenuOrange extends JFrame {
         JMenuItem saveToLogMenuItem = new JMenuItem("Save to log.txt");
         JMenuItem colorChangeMenuItem = new JMenuItem("Change Background Color. Current Hue: 0");
         JMenuItem exitMenuItem = new JMenuItem("Exit");
-        
+
+        // Add MenuItems to Menu
+        menu.add(printDateTimeMenuItem);
+        menu.add(saveToLogMenuItem);
+        menu.add(colorChangeMenuItem);
+        menu.add(exitMenuItem);
+        menuBar.add(menu);
         setJMenuBar(menuBar);
 
     }
