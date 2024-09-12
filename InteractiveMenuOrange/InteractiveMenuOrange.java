@@ -85,6 +85,9 @@ public class InteractiveMenuOrange extends JFrame {
         });
         
         // Action for "Exit" Menu Item
+        exitMenuItem.addActionListener((ActionEvent e) -> {
+            dispose(); // Close the window
+        });
 
     }
 
