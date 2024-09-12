@@ -1,4 +1,7 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import javax.swing.*;
 
 public class InteractiveMenuOrange extends JFrame {
@@ -36,7 +39,15 @@ public class InteractiveMenuOrange extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
 
         // Set actions for MenuItems
+
         // Action for "Print Date Time" Menu Item
+        printDateTimeMenuItem.addActionListener((ActionEvent e) -> {
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String formattedDateTime = now.format(formatter);
+            textArea.append(formattedDateTime + "\n");
+        });
+
         // Action for "Save to log.txt" Menu Item
         // Action for "Change Color" and "Current Hue" Menu Item
         // Action for "Exit" Menu Item
