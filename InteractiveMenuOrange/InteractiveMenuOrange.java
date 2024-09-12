@@ -35,6 +35,12 @@ public class InteractiveMenuOrange extends JFrame {
         scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         add(scrollPane, BorderLayout.CENTER);
 
+        // Set actions for MenuItems
+        // Action for "Print Date Time" Menu Item
+        // Action for "Save to log.txt" Menu Item
+        // Action for "Change Color" and "Current Hue" Menu Item
+        // Action for "Exit" Menu Item
+
     }
 
     public static void main(String[] args) {
