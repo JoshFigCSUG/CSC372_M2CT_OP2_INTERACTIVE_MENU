@@ -1,3 +1,4 @@
+import java.awt.*;
 import javax.swing.*;
 
 public class InteractiveMenuOrange extends JFrame {
@@ -30,6 +31,9 @@ public class InteractiveMenuOrange extends JFrame {
 
         // Create ScrollPane to enable scrolling within the TextArea
         JScrollPane scrollPane = new JScrollPane(textArea);
+        // Add padding around the scroll pane
+        scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        add(scrollPane, BorderLayout.CENTER);
 
     }
 
