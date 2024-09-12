@@ -88,7 +88,6 @@ public class InteractiveMenuOrange extends JFrame {
         exitMenuItem.addActionListener((ActionEvent e) -> {
             dispose(); // Close the window
         });
-
     }
 
     public static void main(String[] args) {
