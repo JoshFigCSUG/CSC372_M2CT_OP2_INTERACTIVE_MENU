@@ -24,6 +24,10 @@ public class InteractiveMenuOrange extends JFrame {
         menuBar.add(menu);
         setJMenuBar(menuBar);
 
+        // Create TextArea to display output and make it non-editable
+        JTextArea textArea = new JTextArea();
+        textArea.setEditable(false);
+
     }
 
     public static void main(String[] args) {
