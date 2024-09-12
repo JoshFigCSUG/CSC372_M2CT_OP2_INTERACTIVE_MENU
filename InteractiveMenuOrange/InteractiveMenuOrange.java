@@ -9,6 +9,7 @@ public class InteractiveMenuOrange extends JFrame {
         // Create Menu Bar and Menu
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("Options");
+        setJMenuBar(menuBar);
 
     }
 
