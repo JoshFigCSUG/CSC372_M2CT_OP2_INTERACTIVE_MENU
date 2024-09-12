@@ -20,7 +20,7 @@ public class InteractiveMenuOrange extends JFrame {
         // Create MenuItems 1 through 4
         JMenuItem printDateTimeMenuItem = new JMenuItem("Print Date and Time");
         JMenuItem saveToLogMenuItem = new JMenuItem("Save to log.txt");
-        JMenuItem colorChangeMenuItem = new JMenuItem("Change Background Color. Current Hue: 0");
+        JMenuItem colorChangeMenuItem = new JMenuItem("Change Background to Orange Color. Current Grey Hue: 0");
         JMenuItem exitMenuItem = new JMenuItem("Exit");
 
         // Add MenuItems to Menu
@@ -81,7 +81,7 @@ public class InteractiveMenuOrange extends JFrame {
             int hue = (int) (hsb[0] * 360); // Convert hue to degrees (0-360)
             
             // Update "Current Hue" in the menu item
-            colorChangeMenuItem.setText("Change Background Color. Current Hue: " + hue);
+            colorChangeMenuItem.setText("Change Background Orange Color. Current Orange Hue: " + hue);
         });
         
         // Action for "Exit" Menu Item
