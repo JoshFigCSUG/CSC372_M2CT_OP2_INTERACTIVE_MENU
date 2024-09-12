@@ -28,6 +28,9 @@ public class InteractiveMenuOrange extends JFrame {
         JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
 
+        // Create ScrollPane to enable scrolling within the TextArea
+        JScrollPane scrollPane = new JScrollPane(textArea);
+
     }
 
     public static void main(String[] args) {
